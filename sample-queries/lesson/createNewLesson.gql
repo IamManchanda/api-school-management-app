@@ -15,5 +15,10 @@ mutation createNewLesson {
     name
     startDate
     endDate
+    students {
+      id
+      firstName
+      lastName
+    }
   }
 }

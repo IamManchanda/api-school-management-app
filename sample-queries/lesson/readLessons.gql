@@ -4,5 +4,10 @@ query readLessons {
     name
     startDate
     endDate
+    students {
+      id
+      firstName
+      lastName
+    }
   }
 }

@@ -1,7 +1,7 @@
 mutation addStudentsToLesson {
   addStudentsToLesson(
     addStudentsToLessonInput: {
-      lessonId: "b01ed855-95d2-4c11-86bb-93dd0256c8c7"
+      lessonId: "47575521-b96b-4fd8-b653-ced9dbb1988f"
       studentIds: [
         "28d5656e-1bc3-478c-aa1d-1f4e7411de9b"
         "4aea6ddf-ab9b-4109-86af-0e4a5c6d6420"
@@ -12,5 +12,10 @@ mutation addStudentsToLesson {
     name
     startDate
     endDate
+    students {
+      id
+      firstName
+      lastName
+    }
   }
 }

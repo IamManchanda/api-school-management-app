@@ -1,7 +1,12 @@
 query readLessonById {
-  lesson(id: "7ea2707c-cfce-471c-9b15-7fbb7f32b678") {
+  lesson(id: "47575521-b96b-4fd8-b653-ced9dbb1988f") {
     name
     startDate
     endDate
+    students {
+      id
+      firstName
+      lastName
+    }
   }
 }
