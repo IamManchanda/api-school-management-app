@@ -27,7 +27,6 @@ export class LessonService {
       startDate,
       endDate,
     });
-
     return this.lessonRepository.save(lesson);
   }
 }
