@@ -1,0 +1,8 @@
+query readLessons {
+  lessons {
+    id
+    name
+    startDate
+    endDate
+  }
+}
