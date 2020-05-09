@@ -8,14 +8,14 @@ import { CreateLessonInput } from "./create-lesson.input";
 export class LessonResolver {
   constructor(private lessonService: LessonService) {}
 
-  @Query(returns => LessonType)
-  lesson(@Args("id") id: string) {
-    return this.lessonService.readLessonById(id);
-  }
-
   @Query(returns => [LessonType])
   lessons() {
     return this.lessonService.readLessons();
+  }
+
+  @Query(returns => LessonType)
+  lesson(@Args("id") id: string) {
+    return this.lessonService.readLessonById(id);
   }
 
   @Mutation(returns => LessonType)

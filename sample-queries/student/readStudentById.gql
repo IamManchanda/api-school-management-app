@@ -1,0 +1,6 @@
+query readStudentById {
+  student(id: "f2774409-e7fb-40f6-87b4-da200d809b54") {
+    firstName
+    lastName
+  }
+}
