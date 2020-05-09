@@ -11,17 +11,17 @@ export class LessonService {
     @InjectRepository(Lesson) private lessonRepository: Repository<Lesson>,
   ) {}
 
-  async readLessons(): Promise<Lesson[]> {
+  readLessons(): Promise<Lesson[]> {
     return this.lessonRepository.find();
   }
 
-  async readLessonById(id: string): Promise<Lesson> {
+  readLessonById(id: string): Promise<Lesson> {
     return this.lessonRepository.findOne({ id });
   }
 
-  async createNewLesson(createLessonInput: CreateLessonInput): Promise<Lesson> {
+  createNewLesson(createLessonInput: CreateLessonInput): Promise<Lesson> {
     const { name, startDate, endDate } = createLessonInput;
-    const lesson = await this.lessonRepository.create({
+    const lesson = this.lessonRepository.create({
       id: uuid(),
       name,
       startDate,
