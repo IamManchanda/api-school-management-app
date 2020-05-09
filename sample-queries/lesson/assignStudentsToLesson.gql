@@ -1,0 +1,16 @@
+mutation assignStudentsToLesson {
+  assignStudentsToLesson(
+    assignStudentsToLessonInput: {
+      lessonId: "b01ed855-95d2-4c11-86bb-93dd0256c8c7"
+      studentIds: [
+        "28d5656e-1bc3-478c-aa1d-1f4e7411de9b"
+        "4aea6ddf-ab9b-4109-86af-0e4a5c6d6420"
+        "1c5da452-58f2-4f21-94dc-d388f11facb8"
+      ]
+    }
+  ) {
+    name
+    startDate
+    endDate
+  }
+}
