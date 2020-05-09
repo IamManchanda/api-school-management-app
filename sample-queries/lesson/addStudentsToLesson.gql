@@ -1,6 +1,6 @@
-mutation assignStudentsToLesson {
-  assignStudentsToLesson(
-    assignStudentsToLessonInput: {
+mutation addStudentsToLesson {
+  addStudentsToLesson(
+    addStudentsToLessonInput: {
       lessonId: "b01ed855-95d2-4c11-86bb-93dd0256c8c7"
       studentIds: [
         "28d5656e-1bc3-478c-aa1d-1f4e7411de9b"

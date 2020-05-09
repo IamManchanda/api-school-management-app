@@ -31,7 +31,7 @@ export class LessonService {
     return this.lessonRepository.save(lesson);
   }
 
-  async assignStudentsToLesson(
+  async addStudentsToLesson(
     lessonId: string,
     studentIds: string[],
   ): Promise<Lesson> {
