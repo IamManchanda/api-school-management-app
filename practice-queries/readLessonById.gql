@@ -1,0 +1,7 @@
+query readLessonById {
+  lesson(id: "8e7b5c23-3990-489d-b46e-46438a939c1a") {
+    name
+    startDate
+    endDate
+  }
+}

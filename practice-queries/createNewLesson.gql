@@ -1,0 +1,11 @@
+mutation createNewLesson {
+  createLesson(
+    name: "Maths Class"
+    startDate: "2020-05-09T18:00:00Z"
+    endDate: "2020-05-09T18:30:00Z"
+  ) {
+    name
+    startDate
+    endDate
+  }
+}
