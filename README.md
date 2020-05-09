@@ -13,7 +13,7 @@ $ npm install
 
 1. Install MongoDB and add a `school` database on your local MongoDB Server. To use MongoDB Atlas instead of local database connection, please replace the URI from `mongodb://localhost/school` to your Atlas connection URL at `src/type-orm.config.ts`
 1. Run one of the below commands, preferably `start:dev`
-1. Visit GraphQL Playground `http://localhost:3000/graphql` to test the API. Try running sample queries from `sample-queries` folder.
+1. Visit GraphQL Playground http://localhost:3000/graphql to run the API. Try running sample queries from `sample-queries` folder.
 
 ```bash
 # development
