@@ -4,7 +4,7 @@ import { IsUUID } from "class-validator";
 
 @InputType()
 export class AssignStudentsToLessonInput {
-  @IsUUID()
+  @IsUUID("4")
   @Field(type => ID)
   lessonId: string;
 

@@ -1,9 +1,14 @@
 mutation createNewLesson {
   createLesson(
     createLessonInput: {
-      name: "Economics Class"
+      name: "Nuxt.js Class"
       startDate: "2020-05-09T18:00:00Z"
       endDate: "2020-05-09T18:30:00Z"
+      students: [
+        "d728ff65-7360-41c9-8418-515cf6ab4b2e"
+        "f2774409-e7fb-40f6-87b4-da200d809b54"
+        "b317df12-0f22-4fe7-9dbc-b843e3eddfea"
+      ]
     }
   ) {
     id
