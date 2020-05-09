@@ -1,6 +1,6 @@
-# API Back-end: School Managment App
+# GraphQL API Back-end: School Managment App
 
-API Back-end Repository for School Managment App (GraphQL, TypeScript, Node & MongoDB).
+GraphQL API Back-end Repository for School Managment App (TypeScript, Node & MongoDB).
 
 ## Installation
 
